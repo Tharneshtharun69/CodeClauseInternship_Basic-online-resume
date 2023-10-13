@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Resume Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Online Resume Generator</h1>
+    </header>
+    <main>
+        <form id="resume-form">
+            <h2>Personal Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone"><br>
+
+            <h2>Education</h2>
+            <label for="edu-degree">Degree:</label>
+            <input type="text" id="edu-degree" name="edu-degree"><br>
+            <label for="edu-school">College:</label>
+            <input type="text" id="edu-college" name="edu-college"><br>
+            <label for="edu-year">Year:</label>
+            <input type="text" id="edu-year" name="edu-year"><br>
+            <label for="cgpa">Cgpa:</label>
+            <input type="text" id="cgpa" name="cgpa"><br>
+            <h2>Experience</h2>
+            <label for="exp-position">Position:</label>
+            <input type="text" id="exp-position" name="exp-position"><br>
+            <label for="exp-company">Company:</label>
+            <input type="text" id="exp-company" name="exp-company"><br>
+            <label for="exp-year">Year:</label>
+            <input type="text" id="exp-year" name="exp-year"><br>
+
+            <button type="button" id="generate-button">Generate Resume</button>
+        </form>
+        <div id="resume-output">
+            <!-- Generated resume will be displayed here -->
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
